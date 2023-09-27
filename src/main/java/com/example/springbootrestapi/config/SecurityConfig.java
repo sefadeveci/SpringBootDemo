@@ -43,13 +43,5 @@ public class SecurityConfig {
     public static PasswordEncoder passwordEncoder(){
         return new BCryptPasswordEncoder();
     }
-    /*
-    @Bean
-    public UserDetailsService userDetailsService(){
-        UserDetails admin= User.builder().username("admin").password(passwordEncoder().encode("admin")).roles("ADMIN").build();
-        UserDetails sefa=User.builder().username("sefa").password(passwordEncoder().encode("sefa")).roles("USER").build();
-        return new InMemoryUserDetailsManager(admin,sefa);
-    }
 
-     */
 }
